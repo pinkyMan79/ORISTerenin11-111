@@ -1,0 +1,102 @@
+/*
+input{
+
+    width: 120px;
+
+}
+*/
+
+#write{
+
+    text-align: center;
+    vertical-align: top;
+
+}
+
+
+#inGoogle{
+
+    text-align: center;
+    vertical-align: 20px;
+
+}
+
+#btnGoogle{
+
+    text-align: center;
+    vertical-align: 20px;
+
+}
+
+#flt{
+
+    vertical-align: center;
+
+}
+#slb{
+
+    vertical-align: bottom;
+
+}
+
+
+#t1{
+
+    width: 200px;
+
+}
+.cls{
+
+    text-align: center;
+    vertical-align: top;
+}
+
+.tti{
+
+    position:relative !important;
+    top: -25px !important;
+}
+
+.itisChutChutVverh{
+
+    vertical-align: 15px;
+
+}
+
+.c{
+
+    text-align: center;
+    display: inline-block;
+
+}
+
+.ct{
+
+    text-align: start;
+    line-height: 5px;
+
+}
+
+.chkb{
+    transform:scale(1);
+    opacity:0.9;
+    cursor:pointer;
+}
+.tringle{
+
+    text-align: center;
+
+}
+
+.tringlet{
+
+    text-align: start;
+
+}
+/*
+#itisTd{
+
+    width: 100px;
+    height: 100px;
+
+}*/
