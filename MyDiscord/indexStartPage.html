@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+<header class="header">
+
+    <div class="container">
+    <div class="header_content">
+
+        <div class="header_logo">
+            <a href="#">
+                <img class="logo-image" src="img/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="header_inner_content">
+    <nav class="menu">
+
+        <ul>
+            <li><a class="feedback" href="#">Feedback</a></li>
+            <li><div class="dropdown">
+                <a onclick="myFunction()" class="language_btn">Language(EN)</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">EU</a>
+                    <a href="#">EN</a>
+                    <a href="#">US</a>
+                    <a href="#">The Great Russian Language</a>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.language_btn')) {
+
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </div></li>
+            <li><a class="request" href="#">Submit a request</a></li>
+            <li><a data-fancybox data-src="#modal" href="javascript:" class="sign_in" href="#">Sign in</a></li>
+        </ul>
+
+    </nav>
+        </div>
+    </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="backImg">
+
+        <div class="container">
+
+            <div class="title">
+
+                <a class="helpCenter">
+
+                    Help Center
+
+                </a>
+
+            </div>
+            <div class="back_input">
+                <input class="help_input" type="text" />
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="introInfo">
+        <h1>Need help? We've got your back.</h1>
+        <p>From account settings to permissions, find help for everything Discord
+            <br>If you're new to Discord and looking for tips, check out our <a href="//support.discord.com/hc/articles/360045138571">Beginner's Guide</a></p>
+    </section>
+
+    <section class="cards">
+
+        <div class="container">
+
+            <div class="items">
+
+                <div class="itemOne">
+
+                    <img src="img/one.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="">Всё идёт по полану</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Просто песня, о простом советском человеке
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/two.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="">Моя оборона</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Прсто эссенция кайфа, прям отвечаю
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/three.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href=""> Убивать</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Лютый психодел под конец, я оценил!
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/four.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="">Дембельская</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Очень красивая и мелодичная композиция, огонь короче
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/five.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="#">Отряд не заметил потери бойца</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Вечерком послушать самое то
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/six.png" alt="" >
+
+                    <div class="itemOneTitle">
+
+                        <a href="#">Русское поле эксперементов</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Ну тут даже сказать нечего, лучше послушать
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/seven.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="#">Любо</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Прям до слёз
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/eight.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="#">Реанимация</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Летов написал её когла лежал в реанимации, песня составлена из бреда больных людей
+
+                    </div>
+
+                </div>
+
+                <div class="itemOne">
+
+                    <img src="img/nine.png" alt="">
+
+                    <div class="itemOneTitle">
+
+                        <a href="#">Бери Шинель</a>
+
+                    </div>
+
+                    <div class="itemOneText">
+
+                        Здесь прям чувствется настроение группы Г.О.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footerClassicStyle">
+
+        <div class="informationFooter">
+
+            <div class="infoFooterTop">
+
+                <a href="https://discord.com/">
+                    <button class="button">
+                        Learn More
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="appsHrefs">
+
+            <a href="//discord.com/login" class="apps-icon apps-browsers">
+                <img src="//theme.zdassets.com/theme_assets/678183/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg">
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.discord" class="apps-icon apps-android">
+                <img src="//theme.zdassets.com/theme_assets/678183/fc0920a1ef72122cbcd69849ff4431fc8095a11b.svg">
+            </a>
+
+            <a href="https://itunes.apple.com/us/app/discord-chat-for-games/id985746746" class="apps-icon apps-ios">
+                <img src="//theme.zdassets.com/theme_assets/678183/e2b9fb24a30f282977edd9c280820029e767b160.svg">
+            </a>
+
+            <a href="https://discord.com/api/download?platform=win" class="apps-icon apps-windows">
+                <img src="//theme.zdassets.com/theme_assets/678183/47100981c9f8e640b597c228528f303b5b5ae4ac.svg">
+            </a>
+
+            <a href="https://discord.com/api/download?platform=osx" class="apps-icon apps-osx">
+                <img src="//theme.zdassets.com/theme_assets/678183/22df88a591db1baf678cb7435a7ec52317daba6f.svg">
+            </a>
+        </div>
+
+    </div>
+
+</footer>
+
+<div id="modal">
+
+ <form class="signIn">
+
+     <div class="siTitle">
+
+         Sign in to Discord
+
+     </div>
+
+     <div class="emailndPasswordBlock">
+
+         <div class="email">
+
+             <p class="emailText">Email</p>
+             <input class="inputEmail"/>
+
+         </div>
+
+         <div class="pass">
+
+             <p class="passText">Password</p>
+                 <input class="inputEmail"/>
+
+         </div>
+
+         <div class="submit">
+
+             <ul>
+
+                 <li>
+
+                     <button class="submit_btn">
+
+                         Sign In
+
+                     </button>
+
+                 </li>
+
+             </ul>
+
+         </div>
+
+         <div class="textOutro">
+
+
+             <p>If you've communicated with our support staff through email previously, you're already registered.
+                 <br> You probably don't have a password yet, though.</p>
+
+         </div>
+
+     </div>
+
+ </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/Main.js"></script>
+
+</body>
+</html>

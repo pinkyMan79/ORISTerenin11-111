@@ -1,0 +1,419 @@
+*{
+
+    box-sizing: border-box;
+
+}
+a{
+
+    text-decoration: none;
+    display: inline-block;
+
+}
+ul,li{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+
+.header{
+
+    position: relative;
+    top: -40px;
+
+}
+
+.container{
+
+    max-width: 1800px;
+    margin:0 auto;
+    padding: 0 15px;
+
+}
+.logo-image {
+
+    position:relative;
+    right: -200px;
+    top:35px
+
+}
+.header_inner_content{
+
+    justify-content: space-between;
+
+}
+.header_content{
+
+    padding: 34px 0px 23px;
+
+}
+.menu li{
+
+     float: right;
+     display: inline-block; !important;
+
+ }
+.menu a{
+
+    padding: 10px 16px;
+    color: rgba(88, 101, 242, 1);
+    border: 1px solid transparent;
+    transition: all .3s;
+
+}
+.menu a:hover{
+
+    border-color: rgba(88, 101, 242, 1);;
+
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.dropdown-content a {
+    color: rgba(88, 101, 242, 1);;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+.dropdown-content a:hover {
+
+    background-color: #ddd
+
+}
+.show {
+
+    display:block;
+
+}
+.backImg{
+    background-size: cover;
+    background-image: url("../img/backgroundMain.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+
+}
+.title{
+
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+.back_input{
+
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    border: 1px;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+.help_input{
+
+    text-align: center;
+    width: 500px;
+    border-radius: 30px 30px 30px;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 8px;
+
+}
+.introInfo{
+
+    display: block;
+    padding: 100px 100px 100px 100px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #4f545c;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+.itemOne{
+
+    background-size: 106px;
+    width: 240px;
+    height: 260px;
+    background: white url(//theme.zdassets.com/theme_assets/678183/1bd76d1….svg) no-repeat center 14px;
+    box-shadow: 0px 9px 30px rgb(200 200 200);
+    padding: 5px;
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 5px;
+    transition: box-shadow .3s, border-color .3s;
+
+}
+.itemOne a{
+
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    color: #5865F2;
+    margin: -10px auto 0;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+.itemOne div{
+
+    font-size: 15px;
+    color: #68727e;
+    margin-top: 20px;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+
+}
+.items{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.itemOne:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+@media (min-width: 600px) {
+    #modal {
+        border-radius: 2px;
+        box-shadow: 0 0 0 6px #5865F2;;
+        display: table;
+        margin: 5% auto 50px;
+        width: 580px;
+        alignment: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+    }
+}
+.siTitle{
+
+    text-align: center;
+
+}
+.emailText{
+
+    color: #2F3941;
+    font-size: 20px;
+
+}
+.emailndPasswordBlock{
+
+    text-align: center;
+
+}
+.submit_btn{
+
+    border-radius: 3px;
+    width: 260px;
+    height: 40px;
+    color: whitesmoke;
+    background-color: #1f73b7;
+    position: relative;
+    top: 10px;
+
+}
+.passText{
+
+    color: #2F3941;
+    font-size: 20px;
+
+}
+.textOutro{
+
+    alignment: center;
+    font-size: 14px;
+    color: #2a2a2a;
+
+}
+footer{
+
+    align-items: center;
+    text-align: center;
+
+}
+.footerClassicStyle{
+
+    background-color: #23272A;
+    background-size: 235px 185px;
+    max-width: 2000px;
+    display: block;
+    text-align: center;
+    max-height: 400px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 70px 0 0;
+    width: 100%;
+
+}
+.appsHrefs{
+
+    text-align: center;
+
+}
+.infoFooterTop{
+
+    position: relative;
+    top: 20px;
+    text-align: center;
+
+}
+.button{
+
+    background-color: #3BA55C;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-radius: 25px;
+    text-align: center;
+    alignment: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin: 50px 0;
+    width: 250px;
+    height: 42px;
+
+}
+.footerClassicStyle .appsHrefs{
+    width: 1000px;
+    height: 500px;
+    background-image: url("//theme.zdassets.com/theme_assets/678183/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png");
+    background-repeat: no-repeat;
+    background-size: 814px 145px;
+    position: relative;
+    left: 500px;
+}
+.apps-browsers {
+    left: 87px;
+}
+.apps-android {
+    left: 378px;
+}
+.apps-ios {
+    left: 482px;
+}
+.apps-osx {
+    left: 648px;
+}
+.apps-windows{
+    left: 710px;
+}
+.appsHrefs{
+
+    text-align: center;
+
+}
+.apps-icon {
+    position: absolute;
+    top: 61px;
+    opacity: .5;
+    transition: all .15s ease;
+}
